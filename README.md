@@ -22,7 +22,18 @@ gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+client = Aeroapi::Client.new(api_key: ENV["AEROAPI_API_KEY"])
+client.airports
+client.operators
+client.alerts
+
+# or maybe, to get airports
+Aeroapi::Airport.list()
+
+# search flights
+flights = Aeroapi::Flight.list()
+```
 
 ## Development
 

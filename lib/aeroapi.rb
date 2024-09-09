@@ -3,6 +3,6 @@
 require_relative "aeroapi/version"
 
 module Aeroapi
-  class Error < StandardError; end
-  # Your code goes here...
+  autoload :Client, "aeroapi/client"
+  autoload :Error, "aeroapi/error"
 end
